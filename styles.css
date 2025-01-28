@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    scroll-behavior: smooth;
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    z-index: 1000;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #00bcd4;
+  }
+  
+  #hero {
+    background: linear-gradient(to right, #00bcd4, #2196f3);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #hero h1 span {
+    color: #ffc107;
+  }
+  
+  .btn {
+    background: #ffc107;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .btn:hover {
+    transform: scale(1.1);
+  }
+  
+  section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .skill {
+    background: #2196f3;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+  }
+  
+  .project {
+    background: #f1f1f1;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Hero Section Animation */
+/* Hero Section Animation */
+.hero-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .cartoon {
+    width: 300px;
+    height: 200px;
+  }
+  
+  /* Walking Animation */
+  @keyframes walk {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(200px);
+    }
+  }
+  
+  @keyframes leg-swing-left {
+    0%, 100% {
+      transform: rotate(10deg);
+      transform-origin: 50px 160px;
+    }
+    50% {
+      transform: rotate(-10deg);
+      transform-origin: 50px 160px;
+    }
+  }
+  
+  @keyframes leg-swing-right {
+    0%, 100% {
+      transform: rotate(-10deg);
+      transform-origin: 50px 160px;
+    }
+    50% {
+      transform: rotate(10deg);
+      transform-origin: 50px 160px;
+    }
+  }
+  
+  /* Apply Animation */
+  #person {
+    animation: walk 5s linear forwards;
+  }
+  
+  #left-leg {
+    animation: leg-swing-left 0.5s ease-in-out infinite;
+  }
+  
+  #right-leg {
+    animation: leg-swing-right 0.5s ease-in-out infinite;
+  }
+  
+  
+  
+  

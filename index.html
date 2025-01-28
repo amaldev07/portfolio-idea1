@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Amaldev</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Amaldev</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+          <h1>Hello, I'm <span>Amaldev</span></h1>
+          <p>Frontend Developer | UI Expert</p>
+          <a href="#projects" class="btn">View Projects</a>
+        </div>
+        <div class="hero-animation">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" class="cartoon">
+            <!-- Desk -->
+            <rect x="220" y="150" width="60" height="20" fill="#8B4513" />
+            <!-- Computer -->
+            <rect x="240" y="100" width="30" height="40" fill="#333" />
+            <rect x="245" y="110" width="20" height="20" fill="#00bcd4" />
+            <rect x="250" y="140" width="10" height="10" fill="#444" />
+            <!-- Walking Person -->
+            <g id="person">
+              <!-- Head -->
+              <circle cx="50" cy="120" r="10" fill="#FFD700" />
+              <!-- Body -->
+              <rect x="45" y="130" width="10" height="30" fill="#FFD700" />
+              <!-- Arms -->
+              <line x1="50" y1="140" x2="60" y2="150" stroke="#FFD700" stroke-width="3" />
+              <line x1="50" y1="140" x2="40" y2="150" stroke="#FFD700" stroke-width="3" />
+              <!-- Legs -->
+              <line id="left-leg" x1="50" y1="160" x2="60" y2="175" stroke="#FFD700" stroke-width="3" />
+              <line id="right-leg" x1="50" y1="160" x2="40" y2="175" stroke="#FFD700" stroke-width="3" />
+            </g>
+          </svg>
+        </div>
+      </section>
+      
+      
+
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate frontend developer with 10 years of experience in building stunning user interfaces and
+            seamless user experiences. I specialize in modern web technologies like Angular, React, and advanced
+            JavaScript.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">HTML5</div>
+            <div class="skill">CSS3</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Angular</div>
+            <div class="skill">React</div>
+            <div class="skill">TypeScript</div>
+            <div class="skill">Tailwind CSS</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Search Application</h3>
+            <p>A Google-like search engine with advanced features like debouncing and multi-page navigation.</p>
+        </div>
+        <div class="project">
+            <h3>Dashboard UI</h3>
+            <p>A dynamic dashboard featuring Angular Material components for data visualization and interaction.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me for collaborations or exciting projects!</p>
+        <a href="mailto:amaldev@example.com" class="btn">Email Me</a>
+    </section>
+
+    <footer>
+        <p>© 2025 Amaldev | All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
